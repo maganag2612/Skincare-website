@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Skincare Ideal Routine</title>
+    <script>
+        function validateForm() {
+            const age = document.forms["skincareForm"]["userAge"].value;
+            if (age < 18) {
+                alert("You must be 18 or older to use our services.");
+                return false;
+            }
+            alert("Thank you for providing your information!");
+            return true;
+        }
+    </script>
+</head>
+<style>
+    body { background-color: #fafafa; color: #000000; font-family: Arial, Verdana, sans-serif;}
+    h1 { background-color: #8cd0d0; color: #000000;}
+    h2 { background-color: #8cd0d0; color: #000000;}
+</style>
+<body>
+    <header>
+        <h1>Find Your Perfect Skincare Routine</h1>
+    </header>
+    <nav>
+        <a href="website.htlm.html">Home</a>
+        <a href="servies.html">Services</a>
+        <a href="'contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>Why Understanding Your Skin Type Matters</h2>
+        <p>Knowing your skin type is the key to achieving healthy, glowing skin. It helps you choose the right products, 
+        avoid unnecessary irritation, and address your skin’s specific needs effectively.</p>
+        <ul>
+            <li>Helps select the most suitable skincare products.</li>
+            <li>Prevents skin problems caused by incorrect product use.</li>
+            <li>Maximizes the effectiveness of your skincare routine.</li>
+            <li>Supports better management of skin concerns like acne or aging.</li>
+        </ul>
+        <h2>Discover Your Perfect Skincare Routine</h2>
+        <p>Take the first step towards healthy, radiant skin by understanding your unique skin type. Visit our website for personalized tips, product recommendations, and expert advice.</p>
+
+        <h3>Tell us about yourself</h3>
+        <form name="skincareForm" onsubmit="return validateForm();">
+            <label for="userName">Name: </label>
+            <input type="text" name="userName" id="userName" required>
+            
+            <label for="userAge">Age: </label>
+            <input type="number" name="userAge" id="userAge" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <small>&copy; 2024 Gabriela Magana</small>
+    </footer>
+</body>
+</html>
+
